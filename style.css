@@ -1,0 +1,182 @@
+ 
+ CSS
+ {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #222;
+}
+
+section {
+    padding: 70px 10%;
+}
+header {
+    background: #ffffff;
+    padding: 20px 10%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    color: #2563eb;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    }
+
+nav a {
+    text-decoration: none;
+    color: #222;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #2563eb;
+}
+#home {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #eef4ff;
+}
+
+#home h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+#home h2 {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+#home p {
+    max-width: 600px;
+    margin-bottom: 25px;
+}
+#home a {
+    background: #2563eb;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+#home img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
+#about {
+    background: white;
+    text-align: center;
+}
+
+#about h2,
+#skills h2,
+#contact h2 {
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+
+#about p {
+    max-width: 700px;
+    margin: 10px auto;
+    color: #555;
+}
+#skills {
+    background: #f8f9fa;
+    text-align: center;
+}
+
+#skills > div {
+    display: inline-block;
+    width: 200px;
+    min-height: 150px;
+    margin: 10px;
+    padding: 25px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    vertical-align: top;
+}
+#skills h3 {
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+#contact {
+    text-align: center;
+    background: white;
+}
+
+form {
+    max-width: 500px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input,
+textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+}
+
+textarea {min-height: 120px;
+    resize: vertical;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: #2563eb;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    #home h1 {
+        font-size: 35px;
+    }
+
+    #skills > div {
+        width: 90%;
+    } section {
+        padding: 50px 5%;
+    }
+}
