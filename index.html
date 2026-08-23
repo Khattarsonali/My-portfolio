@@ -14,15 +14,19 @@
     <!-- Navigation Bar -->
     <header>
         <nav>
-            <h2>My Portfolio</h2>
+    <h2>My Portfolio</h2>
 
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <button class="menu-toggle">☰</button>
+
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    
+<button id="theme-toggle">🌙</button>
+</nav>
     </header>
 
 
@@ -108,20 +112,20 @@
 
         <p>Email: sonalixx@gmail.com</p>
 
-        <form>
+<form id="contact-form">
 
-            <input type="text" placeholder="Sonali">
+    <input type="text" placeholder="Sonali" required>
 
-            <input type="email" placeholder="sonalixx@gmail.com">
+    <input type="email" placeholder="sonalixx@gmail.com" required>
 
-            <textarea placeholder="Thank you for giving me this opportunity"></textarea>
+    <textarea placeholder="Thank you for giving me this opportunity" required></textarea>
 
-            <button type="submit">Send Message</button>
+    <button type="submit">Send Message</button>
 
         </form>
 
     </section>
-
+    <script src="script.js"></script>
 
 </body>
 </html>

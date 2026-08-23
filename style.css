@@ -275,3 +275,80 @@ button:hover {
         padding: 60px 15px;
     }
 }
+/* Mobile Navigation */
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    nav {
+        position: relative;
+    }
+
+    .nav-links {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    text-align: center;
+    gap: 20px;
+}
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+/* Dark Mode Button */
+
+#theme-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+
+/* Dark Mode */
+
+body.dark-mode {
+    background-color: #111827;
+    color: white;
+}
+
+body.dark-mode #about {
+    background-color: #1f2937;
+}
+
+body.dark-mode .skill-card {
+    background-color: #1f2937;
+}
+
+body.dark-mode input,
+body.dark-mode textarea {
+    background-color: #374151;
+    color: white;
+    border-color: #6b7280;
+}
+/* Scroll Animation */
+
+section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
