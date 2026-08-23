@@ -3,89 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>my portfolio</title>
+
+    <title>My Portfolio</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+    <!-- Navigation Bar -->
     <header>
-    <nav>
-        <h2>My Portfolio</h2>
+        <nav>
+            <h2>My Portfolio</h2>
 
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<section id="home">
-    <h1>Hello, I'm Sonali</h1>
-    <h2>MCA Student & Web Developer</h2>
 
-    <p>
-        I am passionate about web development and enjoy
-        creating modern and responsive websites.
-    </p>
-    <a href="#contact">Contact Me</a>
-    <H3> Phone no.=829560xxxx</H3>
-    <img src="Sonali.jpg" alt="My Profile Photo">
-</section>.
+    <!-- Home Section -->
+    <section id="home">
 
-<section id="about">
+        <div class="home-content">
 
-    <h2>About Me</h2>
+            <div>
+                <h1>Hello, I'm Sonali</h1>
 
-    <p>
-        I am an MCA student interested in web development
-        and modern technologies.
-    </p>
+                <h2>MCA Student & Web Developer</h2>
 
-    <p>
-        I have completed my BCA and I am currently
-        improving my skills in HTML, CSS, JavaScript
-        and other web development technologies.
-    </p>
+                <p>
+                    I am passionate about web development and enjoy
+                    creating modern and responsive websites.
+                </p>
 
+                <a href="#contact" class="btn">Contact Me</a>
+
+                <h3>Phone No. = 829560xxxx</h3>
+            </div>
+
+            <div>
+                <img src="images/Sonali.jpg" alt="My Profile Photo">
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about">
+
+        <h2>About Me</h2>
+
+        <p>
+            I am an MCA student interested in web development
+            and modern technologies.
+        </p>
+
+        <p>
+            I have completed my BCA and I am currently
+            improving my skills in HTML, CSS, JavaScript
+            and other web development technologies.
+        </p>
+
+    </section>
+
+
+    <!-- Skills Section -->
     <section id="skills">
 
-    <h2>My Skills</h2>
+        <h2>My Skills</h2>
 
-    <div>
-        <h3>HTML</h3>
-        <p>Creating the structure of web pages.</p>
-    </div>
+        <div class="skills-container">
 
-    <div>
-        <h3>CSS</h3>
-        <p>Designing and styling websites.</p>
-    </div>
+            <div class="skill-card">
+                <h3>HTML</h3>
+                <p>Creating the structure of web pages.</p>
+            </div>
 
-    <div>
-        <h3>JavaScript</h3>
-        <p>Adding functionality and interactivity.</p>
-    </div>
-</section>
+            <div class="skill-card">
+                <h3>CSS</h3>
+                <p>Designing and styling websites.</p>
+            </div>
 
-<section id="contact">
+            <div class="skill-card">
+                <h3>JavaScript</h3>
+                <p>Adding functionality and interactivity.</p>
+            </div>
 
-    <h2>Contact Me</h2>
+        </div>
 
-    <p>Email: sonalixx@gmail.com</p>
-
-    <form>
-<input type="text" placeholder="Sonali">
-
-        <input type="email" placeholder="sonalixx@gmail.com">
-<textarea placeholder="Thanku for giving me opportunity"></textarea>
-
-        <button type="submit">Send Message</button>
-
-    </form>
+    </section>
 
 
-</section>
-    
+    <!-- Contact Section -->
+    <section id="contact">
+
+        <h2>Contact Me</h2>
+
+        <p>Email: sonalixx@gmail.com</p>
+
+        <form>
+
+            <input type="text" placeholder="Sonali">
+
+            <input type="email" placeholder="sonalixx@gmail.com">
+
+            <textarea placeholder="Thank you for giving me this opportunity"></textarea>
+
+            <button type="submit">Send Message</button>
+
+        </form>
+
+    </section>
+
+
 </body>
 </html>
